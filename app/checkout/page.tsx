@@ -541,35 +541,71 @@ export default function CheckoutPage() {
                     <div className="bg-zinc-800/50 border border-gold/20 rounded-lg p-4">
                       <h3 className="text-lg font-medium text-white mb-4 flex items-center gap-2">
                         <CreditCard className="h-5 w-5 text-gold" />
-                        Datos Bancarios para Transferencia
+                        {selectedPayment === "transferencia"
+                          ? "Datos Bancarios para Transferencia"
+                          : `Información de Pago - ${paymentOptions.find((option) => option.id === selectedPayment)?.name}`}
                       </h3>
 
-                      <div className="space-y-3 text-white/80">
-                        <p>
-                          <span className="text-white font-medium">Cuenta:</span> {bankInfo.account}
-                        </p>
-                        <p>
-                          <span className="text-white font-medium">CBU:</span> {bankInfo.cbu}
-                        </p>
-                        <p>
-                          <span className="text-white font-medium">Alias:</span> {bankInfo.alias}
-                        </p>
-                        <p>
-                          <span className="text-white font-medium">Titular:</span> {bankInfo.holder}
-                        </p>
-                        <p>
-                          <span className="text-white font-medium">CUIT/CUIL:</span> {bankInfo.cuit}
-                        </p>
-                      </div>
+                      {selectedPayment === "transferencia" ? (
+                        <div className="space-y-3 text-white/80">
+                          <p>
+                            <span className="text-white font-medium">Cuenta:</span> {bankInfo.account}
+                          </p>
+                          <p>
+                            <span className="text-white font-medium">CBU:</span> {bankInfo.cbu}
+                          </p>
+                          <p>
+                            <span className="text-white font-medium">Alias:</span> {bankInfo.alias}
+                          </p>
+                          <p>
+                            <span className="text-white font-medium">Titular:</span> {bankInfo.holder}
+                          </p>
+                          <p>
+                            <span className="text-white font-medium">CUIT/CUIL:</span> {bankInfo.cuit}
+                          </p>
+                        </div>
+                      ) : (
+                        <div className="space-y-3 text-white/80">
+                          <p>
+                            Has seleccionado:{" "}
+                            <span className="text-white font-medium">
+                              {paymentOptions.find((option) => option.id === selectedPayment)?.name}
+                            </span>
+                          </p>
+                          <p>
+                            Los detalles para completar el pago con este método se coordinarán por WhatsApp una vez que
+                            finalices tu compra.
+                          </p>
+                          <p>
+                            Nuestro equipo te contactará para brindarte toda la información necesaria y responder
+                            cualquier consulta que tengas.
+                          </p>
+                        </div>
+                      )}
                     </div>
 
                     <div className="bg-zinc-800/50 border border-gold/20 rounded-lg p-4">
                       <h3 className="text-lg font-medium text-white mb-4">Instrucciones</h3>
-                      <ol className="space-y-2 text-white/80 list-decimal pl-5">
-                        <li>Realiza la transferencia por el monto total de {formatPrice(totalWithShipping)}.</li>
-                        <li>Una vez completada la transferencia, envíanos el comprobante por WhatsApp.</li>
-                        <li>Procesaremos tu pedido y te notificaremos cuando sea enviado.</li>
-                      </ol>
+                      {selectedPayment === "transferencia" ? (
+                        <ol className="space-y-2 text-white/80 list-decimal pl-5">
+                          <li>Realiza la transferencia por el monto total de {formatPrice(totalWithShipping)}.</li>
+                          <li>Una vez completada la transferencia, envíanos el comprobante por WhatsApp.</li>
+                          <li>Procesaremos tu pedido y te notificaremos cuando sea enviado.</li>
+                        </ol>
+                      ) : (
+                        <ol className="space-y-2 text-white/80 list-decimal pl-5">
+                          <li>
+                            Al finalizar tu compra, serás redirigido a WhatsApp para coordinar los detalles del pago.
+                          </li>
+                          <li>
+                            Nuestro equipo te brindará las instrucciones específicas para completar el pago con el
+                            método seleccionado.
+                          </li>
+                          <li>
+                            Una vez confirmado el pago, procesaremos tu pedido y te notificaremos cuando sea enviado.
+                          </li>
+                        </ol>
+                      )}
                     </div>
 
                     <div className="bg-zinc-800/50 border border-gold/20 rounded-lg p-4">
