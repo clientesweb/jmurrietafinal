@@ -6,12 +6,12 @@ import Link from "next/link"
 // Mensajes para el banner rotativo
 const announcements = [
   {
-    text: "ENVÍO GRATIS A PARTIR DE $80.000 | ",
+    text: "ENVÍO GRATIS A TODO EL PAÍS | ",
     highlight: "3 CUOTAS SIN INTERÉS",
     link: "/",
   },
   {
-    text: "15% DE DESCUENTO EN RIFLES PCP | ",
+    text: "10% DE DESCUENTO EN RIFLES PCP | ",
     highlight: "OFERTA POR TIEMPO LIMITADO",
     link: "/rifles",
   },
