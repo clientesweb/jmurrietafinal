@@ -138,7 +138,7 @@ export default function RiflesPage() {
               <div className="bg-black">
                 <div className="relative h-[300px] sm:h-[400px]">
                   <ImageWithFallback
-                    src="/images/banner-oferta.jpeg"
+                    src="/images/promobanner.jpg"
                     fallbackSrc="/placeholder.svg?height=400&width=1200"
                     alt="Rifle J. Murrieta PCP en oferta"
                     fill
