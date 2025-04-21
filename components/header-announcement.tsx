@@ -6,7 +6,7 @@ import Link from "next/link"
 // Mensajes para el banner rotativo
 const announcements = [
   {
-    text: "ENVÍO GRATIS A TODO EL PAÍS | ",
+    text: "ENVÍOS A TODO EL PAÍS | ",
     highlight: "3 CUOTAS SIN INTERÉS",
     link: "/",
   },
