@@ -28,7 +28,8 @@ export default function ProductPage() {
     fullName: "Rifle Murrieta BULLPUP",
     description:
       "El Murrieta BULLPUP está diseñado para aquellos que buscan un rifle más compacto y manejable. Su tamaño reducido lo hace ideal para situaciones que requieren mayor movilidad, sin comprometer la potencia ni la precisión del disparo. La combinación de materiales avanzados y tecnología de punta garantiza una precisión excepcional tiro tras tiro, incluso en las condiciones más exigentes.",
-    shortDescription: "Diseño compacto para mayor movilidad sin comprometer potencia",
+    shortDescription:
+      "Diseño compacto con cañón estriado CZ para potencia y precisión excepcionales. Fabricación premium con mecanizado CNC.",
     stock: 12,
     features: [
       "Diseño compacto tipo bullpup",
