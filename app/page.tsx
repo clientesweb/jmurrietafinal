@@ -169,7 +169,8 @@ export default function Home() {
         url: "https://jmurrietapcp.com/rifles/rifle-murrieta-j1",
         name: "Rifle Murrieta J1",
         image: "https://jmurrietapcp.com/images/rifle-j1-real-2.jpeg",
-        description: "Diseño tradicional ideal para tiro de precisión a distancia",
+        description:
+          "Diseño tradicional con cañón estriado CZ para máxima precisión a distancia. Fabricación de alta calidad con mecanizado CNC.",
       },
       {
         "@type": "ListItem",
@@ -177,7 +178,8 @@ export default function Home() {
         url: "https://jmurrietapcp.com/rifles/rifle-murrieta-bullpup",
         name: "Rifle Murrieta BULLPUP",
         image: "https://jmurrietapcp.com/images/rifle-bullpup-real-2.jpeg",
-        description: "Diseño compacto para mayor movilidad sin comprometer potencia",
+        description:
+          "Diseño compacto con cañón estriado CZ para potencia y precisión excepcionales. Fabricación premium con mecanizado CNC.",
       },
     ],
   }
@@ -242,7 +244,10 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-white mb-2">
                     Rifle Murrieta <span className="text-gold">J1</span>
                   </h3>
-                  <p className="text-white/70 mb-4">Diseño tradicional ideal para tiro de precisión a distancia</p>
+                  <p className="text-white/70 mb-4">
+                    Diseño tradicional con cañón estriado CZ para máxima precisión a distancia. Fabricación de alta
+                    calidad con mecanizado CNC.
+                  </p>
                   <div className="mb-6">
                     <p className="text-2xl font-bold text-gold">{formatPrice(j1FinalPrices["5.5"])}</p>
                     <p className="text-sm text-white/60 line-through">{formatPrice(j1InflatedPrice)}</p>
@@ -272,7 +277,10 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-white mb-2">
                     Rifle Murrieta <span className="text-gold">BULLPUP</span>
                   </h3>
-                  <p className="text-white/70 mb-4">Diseño compacto para mayor movilidad sin comprometer potencia</p>
+                  <p className="text-white/70 mb-4">
+                    Diseño compacto con cañón estriado CZ para potencia y precisión excepcionales. Fabricación premium
+                    con mecanizado CNC.
+                  </p>
                   <div className="mb-6">
                     <p className="text-2xl font-bold text-gold">{formatPrice(bullpupFinalPrices["5.5"])}</p>
                     <p className="text-sm text-white/60 line-through">{formatPrice(bullpupInflatedPrice)}</p>
