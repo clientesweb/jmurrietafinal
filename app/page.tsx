@@ -307,7 +307,7 @@ export default function Home() {
               <div className="bg-black">
                 <div className="relative h-[300px] sm:h-[400px]">
                   <Image
-                    src="/images/prombanner.jpg"
+                    src="/images/promobanner.jpg"
                     alt="Rifle J. Murrieta PCP en oferta"
                     fill
                     className="object-cover object-center opacity-80"
