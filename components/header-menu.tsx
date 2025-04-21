@@ -18,29 +18,29 @@ export function HeaderMenu() {
           <nav className="hidden md:flex items-center justify-between h-full">
             <ul className="flex items-center">
               <li className="desktop-list__item">
-                <Link href="/" className="desktop-list__link">
+                <Link href="/" className="desktop-list__link font-cinzel">
                   Inicio
                 </Link>
               </li>
               <li className="desktop-list__item">
-                <Link href="/productos" className="desktop-list__link">
+                <Link href="/productos" className="desktop-list__link font-cinzel">
                   Productos <i className="fas fa-chevron-down ml-1 text-xs"></i>
                 </Link>
                 <ul className="nav first">
                   <li className="desktop-list__subitem">
-                    <Link href="/rifles" className="desktop-list__link">
+                    <Link href="/rifles" className="desktop-list__link font-cinzel">
                       Rifles
                     </Link>
                   </li>
                   <li className="desktop-list__subitem">
-                    <Link href="/accesorios" className="desktop-list__link">
+                    <Link href="/accesorios" className="desktop-list__link font-cinzel">
                       Accesorios
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="desktop-list__item">
-                <Link href="/historia" className="desktop-list__link">
+                <Link href="/historia" className="desktop-list__link font-cinzel">
                   Historia
                 </Link>
               </li>
@@ -54,17 +54,17 @@ export function HeaderMenu() {
 
             <ul className="flex items-center">
               <li className="desktop-list__item">
-                <Link href="/contacto" className="desktop-list__link">
+                <Link href="/contacto" className="desktop-list__link font-cinzel">
                   Contacto
                 </Link>
               </li>
               <li className="desktop-list__item">
-                <Link href="/faq" className="desktop-list__link">
+                <Link href="/faq" className="desktop-list__link font-cinzel">
                   Faqs
                 </Link>
               </li>
               <li className="desktop-list__item">
-                <Link href="/blog" className="desktop-list__link">
+                <Link href="/blog" className="desktop-list__link font-cinzel">
                   Blog
                 </Link>
               </li>
@@ -119,14 +119,18 @@ export function HeaderMenu() {
           <nav className="container mx-auto px-4 py-6">
             <ul className="space-y-4">
               <li className="mobile-menu-sidenav__list-item">
-                <Link href="/" className="mobile-menu-sidenav__item-link" onClick={() => setMobileMenuOpen(false)}>
+                <Link
+                  href="/"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Inicio
                 </Link>
               </li>
               <li className="mobile-menu-sidenav__list-item">
                 <Link
                   href="/productos"
-                  className="mobile-menu-sidenav__item-link"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Productos
@@ -135,7 +139,7 @@ export function HeaderMenu() {
               <li className="mobile-menu-sidenav__list-item pl-4">
                 <Link
                   href="/rifles"
-                  className="mobile-menu-sidenav__item-link"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Rifles
@@ -144,7 +148,7 @@ export function HeaderMenu() {
               <li className="mobile-menu-sidenav__list-item pl-4">
                 <Link
                   href="/accesorios"
-                  className="mobile-menu-sidenav__item-link"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Accesorios
@@ -153,7 +157,7 @@ export function HeaderMenu() {
               <li className="mobile-menu-sidenav__list-item">
                 <Link
                   href="/historia"
-                  className="mobile-menu-sidenav__item-link"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Historia
@@ -162,19 +166,27 @@ export function HeaderMenu() {
               <li className="mobile-menu-sidenav__list-item">
                 <Link
                   href="/contacto"
-                  className="mobile-menu-sidenav__item-link"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Contacto
                 </Link>
               </li>
               <li className="mobile-menu-sidenav__list-item">
-                <Link href="/faq" className="mobile-menu-sidenav__item-link" onClick={() => setMobileMenuOpen(false)}>
+                <Link
+                  href="/faq"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Faqs
                 </Link>
               </li>
               <li className="mobile-menu-sidenav__list-item">
-                <Link href="/blog" className="mobile-menu-sidenav__item-link" onClick={() => setMobileMenuOpen(false)}>
+                <Link
+                  href="/blog"
+                  className="mobile-menu-sidenav__item-link font-cinzel"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Blog
                 </Link>
               </li>
