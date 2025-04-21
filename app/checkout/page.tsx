@@ -421,35 +421,6 @@ export default function CheckoutPage() {
                       </RadioGroup>
                     </div>
 
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-medium text-white">Método de Pago</h3>
-                      <RadioGroup value={selectedPayment} onValueChange={setSelectedPayment} className="space-y-3">
-                        {paymentOptions.map((option) => (
-                          <div
-                            key={option.id}
-                            className={`relative flex items-start border rounded-lg p-4 transition-all cursor-pointer ${
-                              option.id === selectedPayment
-                                ? "border-gold bg-gold/5"
-                                : "border-white/20 hover:border-gold/50"
-                            }`}
-                            onClick={() => setSelectedPayment(option.id)}
-                          >
-                            <div className="ml-2 space-y-2 w-full">
-                              <div className="flex justify-between items-start">
-                                <label className="font-medium text-white flex items-center gap-2">
-                                  <CreditCard className="h-4 w-4 text-gold" />
-                                  {option.name}
-                                </label>
-                              </div>
-                              <div className="text-sm text-white/60">
-                                <p>{option.description}</p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </RadioGroup>
-                    </div>
-
                     {selectedShipping !== "retiro-local" && (
                       <div className="space-y-4">
                         <h3 className="text-lg font-medium text-white">Dirección de Envío</h3>
@@ -538,6 +509,36 @@ export default function CheckoutPage() {
                   <h2 className="text-xl font-bold text-white mb-6">Información de Pago</h2>
 
                   <div className="space-y-6">
+                    {/* Mover la selección de métodos de pago al paso 2 */}
+                    <div className="space-y-4">
+                      <h3 className="text-lg font-medium text-white">Selecciona tu Método de Pago</h3>
+                      <RadioGroup value={selectedPayment} onValueChange={setSelectedPayment} className="space-y-3">
+                        {paymentOptions.map((option) => (
+                          <div
+                            key={option.id}
+                            className={`relative flex items-start border rounded-lg p-4 transition-all cursor-pointer ${
+                              option.id === selectedPayment
+                                ? "border-gold bg-gold/5"
+                                : "border-white/20 hover:border-gold/50"
+                            }`}
+                            onClick={() => setSelectedPayment(option.id)}
+                          >
+                            <div className="ml-2 space-y-2 w-full">
+                              <div className="flex justify-between items-start">
+                                <label className="font-medium text-white flex items-center gap-2">
+                                  <CreditCard className="h-4 w-4 text-gold" />
+                                  {option.name}
+                                </label>
+                              </div>
+                              <div className="text-sm text-white/60">
+                                <p>{option.description}</p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </RadioGroup>
+                    </div>
+
                     <div className="bg-zinc-800/50 border border-gold/20 rounded-lg p-4">
                       <h3 className="text-lg font-medium text-white mb-4 flex items-center gap-2">
                         <CreditCard className="h-5 w-5 text-gold" />
@@ -634,11 +635,6 @@ export default function CheckoutPage() {
                         <p className="flex items-center gap-2">
                           <Truck className="h-4 w-4 text-gold flex-shrink-0" />
                           {getSelectedShippingOption().name}
-                        </p>
-                        <p className="flex items-center gap-2">
-                          <CreditCard className="h-4 w-4 text-gold flex-shrink-0" />
-                          {paymentOptions.find((option) => option.id === selectedPayment)?.name ||
-                            "Transferencia Bancaria"}
                         </p>
                       </div>
                     </div>
