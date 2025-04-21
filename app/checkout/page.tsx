@@ -23,25 +23,52 @@ import { RadioGroup } from "@/components/ui/radio-group"
 import { Separator } from "@/components/ui/separator"
 import { CreditCard, Truck, ShoppingBag, User, MapPin, Phone, Mail, AlertCircle, Check } from "lucide-react"
 
-// Opciones de envío
+// Modificar las opciones de envío para quitar los precios
 const shippingOptions = [
   {
     id: "correo-argentino",
     name: "Correo Argentino",
-    price: 2500,
+    price: 0,
     estimatedDelivery: "3-5 días hábiles",
+    description: "El costo se coordinará por WhatsApp",
   },
   {
     id: "andreani",
     name: "Andreani",
-    price: 3500,
+    price: 0,
     estimatedDelivery: "2-3 días hábiles",
+    description: "El costo se coordinará por WhatsApp",
   },
   {
     id: "retiro-local",
     name: "Retiro en local",
     price: 0,
     estimatedDelivery: "Inmediato",
+    description: "Sin costo adicional",
+  },
+]
+
+// Añadir opciones de pago
+const paymentOptions = [
+  {
+    id: "transferencia",
+    name: "Transferencia Bancaria",
+    description: "Pago completo mediante transferencia bancaria",
+  },
+  {
+    id: "3-cuotas",
+    name: "3 Cuotas",
+    description: "Pago en 3 cuotas (consultar detalles por WhatsApp)",
+  },
+  {
+    id: "6-cuotas",
+    name: "6 Cuotas",
+    description: "Pago en 6 cuotas (consultar detalles por WhatsApp)",
+  },
+  {
+    id: "efectivo",
+    name: "Efectivo",
+    description: "Pago en efectivo (solo para retiro en local)",
   },
 ]
 
@@ -74,6 +101,9 @@ export default function CheckoutPage() {
   // Estado para la opción de envío seleccionada
   const [selectedShipping, setSelectedShipping] = useState(shippingOptions[0].id)
 
+  // Añadir estado para la opción de pago seleccionada
+  const [selectedPayment, setSelectedPayment] = useState(paymentOptions[0].id)
+
   // Estado para el paso actual del checkout
   const [step, setStep] = useState(1)
 
@@ -94,8 +124,8 @@ export default function CheckoutPage() {
     return shippingOptions.find((option) => option.id === selectedShipping) || shippingOptions[0]
   }
 
-  // Calcular el total con envío
-  const totalWithShipping = totalPrice + getSelectedShippingOption().price
+  // Modificar la función totalWithShipping para que solo use el totalPrice
+  const totalWithShipping = totalPrice
 
   // Validar el formulario
   const validateForm = () => {
@@ -130,9 +160,10 @@ export default function CheckoutPage() {
     window.scrollTo(0, 0)
   }
 
-  // Generar mensaje para WhatsApp
+  // Modificar la función generateWhatsAppMessage para incluir la opción de pago
   const generateWhatsAppMessage = () => {
     const shippingOption = getSelectedShippingOption()
+    const paymentOption = paymentOptions.find((option) => option.id === selectedPayment) || paymentOptions[0]
 
     let message = `*NUEVO PEDIDO - J. MURRIETA*\n\n`
     message += `*Datos del Cliente:*\n`
@@ -147,7 +178,10 @@ export default function CheckoutPage() {
     }
 
     message += `*Método de Envío:*\n`
-    message += `${shippingOption.name} - ${formatPrice(shippingOption.price)}\n\n`
+    message += `${shippingOption.name} - ${shippingOption.description}\n\n`
+
+    message += `*Método de Pago:*\n`
+    message += `${paymentOption.name} - ${paymentOption.description}\n\n`
 
     message += `*Productos:*\n`
     items.forEach((item) => {
@@ -155,8 +189,7 @@ export default function CheckoutPage() {
     })
 
     message += `\n*Subtotal:* ${formatPrice(totalPrice)}\n`
-    message += `*Envío:* ${formatPrice(shippingOption.price)}\n`
-    message += `*Total:* ${formatPrice(totalWithShipping)}\n\n`
+    message += `*Total:* ${formatPrice(totalPrice)}\n\n`
 
     if (formData.notes) {
       message += `*Notas:*\n${formData.notes}\n\n`
@@ -377,14 +410,39 @@ export default function CheckoutPage() {
                                   <Truck className="h-4 w-4 text-gold" />
                                   {option.name}
                                 </label>
-                                <div className="text-right">
-                                  <div className="font-semibold text-white">
-                                    {option.price === 0 ? "Gratis" : formatPrice(option.price)}
-                                  </div>
-                                </div>
                               </div>
                               <div className="text-sm text-white/60">
                                 <p>Tiempo estimado: {option.estimatedDelivery}</p>
+                                <p>{option.description}</p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </RadioGroup>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-lg font-medium text-white">Método de Pago</h3>
+                      <RadioGroup value={selectedPayment} onValueChange={setSelectedPayment} className="space-y-3">
+                        {paymentOptions.map((option) => (
+                          <div
+                            key={option.id}
+                            className={`relative flex items-start border rounded-lg p-4 transition-all cursor-pointer ${
+                              option.id === selectedPayment
+                                ? "border-gold bg-gold/5"
+                                : "border-white/20 hover:border-gold/50"
+                            }`}
+                            onClick={() => setSelectedPayment(option.id)}
+                          >
+                            <div className="ml-2 space-y-2 w-full">
+                              <div className="flex justify-between items-start">
+                                <label className="font-medium text-white flex items-center gap-2">
+                                  <CreditCard className="h-4 w-4 text-gold" />
+                                  {option.name}
+                                </label>
+                              </div>
+                              <div className="text-sm text-white/60">
+                                <p>{option.description}</p>
                               </div>
                             </div>
                           </div>
@@ -537,6 +595,15 @@ export default function CheckoutPage() {
                             </span>
                           </p>
                         )}
+                        <p className="flex items-center gap-2">
+                          <Truck className="h-4 w-4 text-gold flex-shrink-0" />
+                          {getSelectedShippingOption().name}
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <CreditCard className="h-4 w-4 text-gold flex-shrink-0" />
+                          {paymentOptions.find((option) => option.id === selectedPayment)?.name ||
+                            "Transferencia Bancaria"}
+                        </p>
                       </div>
                     </div>
 
@@ -595,11 +662,7 @@ export default function CheckoutPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-white/70">Envío</span>
-                    <span className="text-white">
-                      {getSelectedShippingOption().price === 0
-                        ? "Gratis"
-                        : formatPrice(getSelectedShippingOption().price)}
-                    </span>
+                    <span className="text-white">A coordinar por WhatsApp</span>
                   </div>
                 </div>
 
@@ -607,7 +670,7 @@ export default function CheckoutPage() {
 
                 <div className="flex justify-between font-bold">
                   <span className="text-white">Total</span>
-                  <span className="text-gold">{formatPrice(totalWithShipping)}</span>
+                  <span className="text-gold">{formatPrice(totalPrice)}</span>
                 </div>
               </div>
             </div>
