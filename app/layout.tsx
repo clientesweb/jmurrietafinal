@@ -55,6 +55,14 @@ export const metadata: Metadata = {
     siteName: "J. Murrieta PCP",
     locale: "es_AR",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "J. Murrieta - Rifles PCP de Precisión",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -62,6 +70,7 @@ export const metadata: Metadata = {
     description:
       "Rifles PCP de alta precisión fabricados en Argentina. Calidad y rendimiento superior para tiro deportivo y caza.",
     creator: "@jmurrietapcp",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -75,7 +84,7 @@ export const metadata: Metadata = {
     },
   },
   manifest: "/site.webmanifest",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 // Configuración de viewport y theme-color
