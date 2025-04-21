@@ -1,0 +1,13 @@
+# www.robotstxt.org
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jmurrietapcp.com/sitemap.xml
+
+# Directorios y archivos a no indexar
+Disallow: /checkout/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*?
