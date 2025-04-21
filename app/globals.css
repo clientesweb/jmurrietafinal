@@ -1,0 +1,436 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 30% 97%;
+    --foreground: 20 10% 15%;
+
+    --card: 20 30% 97%;
+    --card-foreground: 20 10% 15%;
+
+    --popover: 20 30% 97%;
+    --popover-foreground: 20 10% 15%;
+
+    --primary: 30 84% 25%;
+    --primary-foreground: 20 30% 97%;
+
+    --secondary: 20 10% 90%;
+    --secondary-foreground: 20 10% 15%;
+
+    --muted: 20 10% 90%;
+    --muted-foreground: 20 10% 40%;
+
+    --accent: 20 10% 90%;
+    --accent-foreground: 20 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 20 30% 97%;
+
+    --border: 20 10% 85%;
+    --input: 20 10% 85%;
+    --ring: 30 84% 25%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 30 70% 45%;
+    --primary-foreground: 0 0% 7%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 75%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 30 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-cinzel;
+  }
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+.bg-gold {
+  background-color: #d4af37;
+}
+
+.border-gold {
+  border-color: #d4af37;
+}
+
+.text-gold-gradient {
+  @apply bg-gold-gradient bg-clip-text text-transparent bg-[length:200%_auto];
+}
+
+.header-announcement {
+  @apply py-2 text-center text-white;
+}
+
+.header-announcement__text {
+  @apply text-sm md:text-base m-0;
+}
+
+.header-menu {
+  @apply sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur;
+}
+
+.desktop-list__item {
+  @apply relative px-3 py-4;
+}
+
+.desktop-list__link {
+  @apply flex items-center gap-1 text-sm font-medium transition-colors hover:text-gold;
+}
+
+.desktop-list__subitem {
+  @apply py-2;
+}
+
+.nav.first {
+  @apply absolute hidden bg-background border rounded-md p-2 min-w-40 shadow-md;
+}
+
+.desktop-list__item:hover .nav.first {
+  @apply block;
+}
+
+.block-carrousel__image {
+  @apply w-full h-auto object-cover;
+}
+
+/* Estilos para la sección de información de compra */
+.purchase-info-item {
+  @apply flex flex-col md:flex-row items-center text-center md:text-left gap-4 p-6 border border-gold/10 bg-zinc-900/50 hover:border-gold/30 transition-all duration-300;
+}
+
+.purchase-info-icon-container {
+  @apply w-16 h-16 rounded-full bg-black flex items-center justify-center border border-gold/30;
+}
+
+.purchase-info-icon {
+  @apply w-8 h-8 text-gold;
+}
+
+.purchase-info-content {
+  @apply flex flex-col;
+}
+
+.purchase-info-title {
+  @apply text-lg font-bold text-white mb-1;
+}
+
+.purchase-info-subtitle {
+  @apply text-sm text-gold/80;
+}
+
+.block-products-feed__products {
+  @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8;
+}
+
+.block-products-feed__product-wrapper {
+  @apply flex flex-col items-center mb-8;
+}
+
+.block-products-feed__product-media {
+  @apply relative w-full aspect-square overflow-hidden mb-3;
+}
+
+.block-products-feed__product-image {
+  @apply w-full h-full object-cover transition-transform duration-300 hover:scale-105;
+}
+
+.block-products-feed__product-name {
+  @apply text-base font-medium mb-1;
+}
+
+.block-products-feed__product-price {
+  @apply text-sm font-bold;
+}
+
+.footer__top {
+  @apply bg-secondary/50 py-8;
+}
+
+.footer__top__item {
+  @apply mb-6;
+}
+
+.footer__top__title {
+  @apply text-lg font-bold mb-4;
+}
+
+.footer__top__icons {
+  @apply flex flex-wrap gap-3;
+}
+
+.footer__top__icon {
+  @apply h-8 w-auto;
+}
+
+.footer__top__social-media-list {
+  @apply flex gap-4;
+}
+
+.footer__top__social-media-item {
+  @apply w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center;
+}
+
+.footer__top__info-list {
+  @apply space-y-2;
+}
+
+.footer__top__info-item {
+  @apply flex items-center gap-2 text-sm;
+}
+
+.footer__bottom {
+  @apply py-4 border-t;
+}
+
+.cart-sidenav {
+  @apply fixed top-0 right-0 z-50 h-full w-full max-w-md bg-background shadow-lg transform translate-x-full transition-transform duration-300;
+}
+
+.cart-sidenav.active {
+  @apply translate-x-0;
+}
+
+.cart-sidenav__title {
+  @apply text-xl font-bold mb-4;
+}
+
+.mobile-menu-sidenav {
+  @apply fixed top-0 left-0 z-50 h-full w-full max-w-xs bg-background shadow-lg transform -translate-x-full transition-transform duration-300;
+}
+
+.mobile-menu-sidenav.active {
+  @apply translate-x-0;
+}
+
+.mobile-menu-sidenav__list-item {
+  @apply border-b py-3;
+}
+
+.mobile-menu-sidenav__item-link {
+  @apply text-base font-medium;
+}
+
+.chat-bubbles {
+  @apply fixed bottom-6 right-6 z-40;
+}
+
+.chat-bubbles__list {
+  @apply flex flex-col gap-3;
+}
+
+.chat__bubble {
+  @apply w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg cursor-pointer;
+}
+
+.chat__bubble--facebook {
+  @apply bg-blue-600;
+}
+
+.chat__bubble--whatsapp {
+  @apply bg-green-500;
+}
+
+.chat__bubble--dispatcher {
+  @apply bg-primary text-white;
+}
+
+/* Estilos para el efecto de brillo dorado */
+.gold-shine {
+  @apply relative overflow-hidden;
+}
+
+.gold-shine::after {
+  content: "";
+  @apply absolute inset-0 bg-gold-gradient opacity-0 transition-opacity duration-300;
+  mix-blend-mode: overlay;
+}
+
+.gold-shine:hover::after {
+  @apply opacity-30 animate-shimmer;
+}
+
+/* Estilos para el badge premium */
+.badge-premium {
+  @apply bg-gold-gradient text-black font-bold;
+}
+
+/* Estilos para el efecto de borde dorado */
+.gold-border {
+  @apply border-2 border-gold;
+}
+
+.gold-border-hover:hover {
+  @apply border-gold transition-colors duration-300;
+}
+
+/* Estilos para el efecto de sombra dorada */
+.gold-shadow {
+  @apply shadow-[0_0_10px_rgba(212,175,55,0.5)];
+}
+
+.gold-shadow-hover:hover {
+  @apply shadow-[0_0_15px_rgba(212,175,55,0.7)] transition-shadow duration-300;
+}
+
+/* Estilos para el hero responsivo */
+.hero-section {
+  @apply relative w-full;
+}
+
+.hero-content {
+  @apply absolute inset-0 flex items-center z-10;
+}
+
+.hero-text-container {
+  @apply container mx-auto px-4;
+}
+
+.hero-text-box {
+  @apply max-w-lg text-white space-y-6;
+}
+
+.hero-title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+}
+
+.hero-description {
+  @apply text-lg md:text-xl;
+}
+
+.hero-buttons {
+  @apply flex flex-wrap gap-4;
+}
+
+/* Estilos para productos destacados */
+.featured-product {
+  @apply bg-secondary/10 rounded-lg overflow-hidden transition-all duration-300;
+}
+
+.featured-product:hover {
+  @apply transform shadow-xl;
+}
+
+.featured-product-image {
+  @apply relative aspect-square md:aspect-[4/3] overflow-hidden;
+}
+
+.featured-product-content {
+  @apply p-6;
+}
+
+.featured-product-title {
+  @apply text-2xl font-bold mb-2;
+}
+
+.featured-product-description {
+  @apply text-muted-foreground mb-4;
+}
+
+.featured-product-price {
+  @apply text-2xl font-bold mb-6;
+}
+
+/* Estilos para secciones */
+.section-title {
+  @apply text-3xl font-bold text-center mb-12;
+}
+
+.section-subtitle {
+  @apply text-xl font-medium text-center mb-8 max-w-2xl mx-auto;
+}
+
+/* Estilos para el CTA */
+.cta-section {
+  @apply py-16 bg-gradient-to-r from-black to-zinc-900 text-white;
+}
+
+.cta-title {
+  @apply text-3xl font-bold mb-4 text-center;
+}
+
+.cta-description {
+  @apply max-w-2xl mx-auto mb-8 text-lg text-center;
+}
+
+.cta-button-container {
+  @apply flex justify-center;
+}
+
+/* Animaciones */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+  background-size: 200% auto;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(90deg, #d4af37, #f4d160, #d4af37);
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
