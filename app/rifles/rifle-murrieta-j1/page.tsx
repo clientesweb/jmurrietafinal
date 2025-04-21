@@ -27,7 +27,8 @@ export const productData = {
   fullName: "Rifle Murrieta J1",
   description:
     "El Rifle Murrieta J1 es el resultado de años de investigación y desarrollo, combinando la tradición artesanal con la más avanzada tecnología. Su diseño tradicional tipo carabina ofrece un equilibrio perfecto entre estabilidad y maniobrabilidad, ideal para tiro de precisión a distancia. Cada componente ha sido cuidadosamente seleccionado y ensamblado para garantizar un rendimiento excepcional tiro tras tiro.",
-  shortDescription: "Diseño tradicional ideal para tiro de precisión a distancia",
+  shortDescription:
+    "Diseño tradicional con cañón estriado CZ para máxima precisión a distancia. Fabricación de alta calidad con mecanizado CNC.",
   calibers: [
     {
       name: "Calibre 5.5mm",
