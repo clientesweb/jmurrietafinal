@@ -23,16 +23,25 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden md:flex gap-6 items-center" aria-label="Navegación principal">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-primary focus-visible">
+          <Link href="/" className="text-sm font-cinzel font-medium transition-colors hover:text-primary focus-visible">
             Inicio
           </Link>
-          <Link href="/rifles" className="text-sm font-medium transition-colors hover:text-primary focus-visible">
+          <Link
+            href="/rifles"
+            className="text-sm font-cinzel font-medium transition-colors hover:text-primary focus-visible"
+          >
             Rifles
           </Link>
-          <Link href="/accesorios" className="text-sm font-medium transition-colors hover:text-primary focus-visible">
+          <Link
+            href="/accesorios"
+            className="text-sm font-cinzel font-medium transition-colors hover:text-primary focus-visible"
+          >
             Accesorios
           </Link>
-          <Link href="/contacto" className="text-sm font-medium transition-colors hover:text-primary focus-visible">
+          <Link
+            href="/contacto"
+            className="text-sm font-cinzel font-medium transition-colors hover:text-primary focus-visible"
+          >
             Contacto
           </Link>
           <Button
@@ -101,28 +110,28 @@ export function Navbar() {
           <nav className="container grid gap-6 py-6" aria-label="Menú móvil">
             <Link
               href="/"
-              className="text-lg font-medium transition-colors hover:text-primary focus-visible"
+              className="text-lg font-cinzel font-medium transition-colors hover:text-primary focus-visible"
               onClick={() => setIsOpen(false)}
             >
               Inicio
             </Link>
             <Link
               href="/rifles"
-              className="text-lg font-medium transition-colors hover:text-primary focus-visible"
+              className="text-lg font-cinzel font-medium transition-colors hover:text-primary focus-visible"
               onClick={() => setIsOpen(false)}
             >
               Rifles
             </Link>
             <Link
               href="/accesorios"
-              className="text-lg font-medium transition-colors hover:text-primary focus-visible"
+              className="text-lg font-cinzel font-medium transition-colors hover:text-primary focus-visible"
               onClick={() => setIsOpen(false)}
             >
               Accesorios
             </Link>
             <Link
               href="/contacto"
-              className="text-lg font-medium transition-colors hover:text-primary focus-visible"
+              className="text-lg font-cinzel font-medium transition-colors hover:text-primary focus-visible"
               onClick={() => setIsOpen(false)}
             >
               Contacto
