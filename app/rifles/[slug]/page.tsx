@@ -34,9 +34,10 @@ const riflesData = {
     stock: 15,
     features: [
       "Diseño tradicional tipo carabina",
-      "Cañón fabricado con maquinaria CZ",
+      "Cañón fabricado con maquinaria CZ con paso de estría 1/20 una en veinte pulgadas",
       "Estructura larga y estable para mayor precisión",
       "Gatillo de dos tiempos ajustable",
+      "Paso de estría: 1/20 una en veinte pulgadas",
     ],
     calibers: [
       {
@@ -81,8 +82,9 @@ const riflesData = {
     features: [
       "Diseño compacto tipo bullpup",
       "Mayor manejabilidad y movilidad",
-      "Cañón fabricado con maquinaria CZ",
+      "Cañón fabricado con maquinaria CZ con paso de estría 1/20 una en veinte pulgadas",
       "Sistema de recarga rápida",
+      "Paso de estría: 1/20 una en veinte pulgadas",
     ],
     calibers: [
       {
