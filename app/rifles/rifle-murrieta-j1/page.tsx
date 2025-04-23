@@ -4,11 +4,11 @@ import RifleMurrietaJ1Client from "./RifleMurrietaJ1Client"
 export const metadata = {
   title: "Rifle Murrieta J1 | Precisión y Elegancia",
   description:
-    "El Rifle Murrieta J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
+    "El Rifle Murrieta J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
   openGraph: {
     title: "Rifle Murrieta J1 | Precisión y Elegancia",
     description:
-      "El Rifle Murrieta J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
+      "El Rifle Murrieta J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
     images: [
       {
         url: "https://jmurrietapcp.com/images/rifle-j1-real-1.jpeg",
@@ -60,7 +60,7 @@ export const productData = {
   ],
   features: [
     "Diseño tradicional tipo carabina",
-    "Cañón estriado de 550mm con 6-12 microestrías de fabricación propia",
+    "Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas de fabricación propia",
     "Mecanismo de carga Side Lever (palanca lateral para carga a repetición)",
     "Doble Click para monotiro",
     "Regulador de potencia de martillo",
