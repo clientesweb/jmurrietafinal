@@ -123,7 +123,7 @@ export default function AccesoriosPage() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-white mb-2">{accesorio.name}</h3>
                     <p className="text-white/70 mb-4">{accesorio.description}</p>
-                    <p className="text-xl font-bold text-gold mb-6">{accesorio.price}</p>
+                    <p className="text-xl font-bold text-gold mb-6">Consultar disponibilidad</p>
                     <Button asChild className="w-full bg-gold hover:bg-gold/90 text-black">
                       <Link href={`/accesorios/${accesorio.slug}`} className="flex items-center justify-center gap-2">
                         VER DETALLES <ArrowRight className="h-4 w-4" />
