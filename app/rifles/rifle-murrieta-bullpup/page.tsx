@@ -4,11 +4,11 @@ import RifleBullpupPageClient from "./rifle-bullpup-page-client"
 export const metadata = {
   title: "Rifle Murrieta Bullpup | Compacto y Potente",
   description:
-    "El Rifle Murrieta Bullpup, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con 6-12 microestrías. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
+    "El Rifle Murrieta Bullpup, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
   openGraph: {
     title: "Rifle Murrieta Bullpup | Compacto y Potente",
     description:
-      "El Rifle Murrieta Bullpup, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con 6-12 microestrías. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
+      "El Rifle Murrieta Bullpup, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
     images: [
       {
         url: "https://jmurrietapcp.com/images/rifle-bullpup-real-1.jpeg",
@@ -33,7 +33,7 @@ export default function ProductPage() {
     stock: 12,
     features: [
       "Diseño compacto tipo bullpup",
-      "Cañón estriado de 550mm con 6-12 microestrías de fabricación propia",
+      "Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas de fabricación propia",
       "Mecanismo de carga Side Lever (palanca lateral para carga a repetición)",
       "Doble Click para monotiro",
       "Regulador de potencia de martillo",
