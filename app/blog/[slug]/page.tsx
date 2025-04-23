@@ -53,6 +53,11 @@ const blogPosts = {
       
       <p>Te recomendamos revisar periódicamente el estado de las juntas y sellos, prestando especial atención a signos de desgaste, grietas o deformaciones. En caso de detectar algún problema, es aconsejable reemplazar estos componentes lo antes posible.</p>
       
+      <div class="bg-gold/10 border-l-4 border-gold p-4 my-6 rounded">
+        <p class="font-bold text-white">IMPORTANTE:</p>
+        <p class="text-white/80">Ante cualquier pérdida de aire, presión, ruptura o cualquier otro inconveniente, contáctese inmediatamente con el área de mantenimiento de J. Murrieta para hacer uso de su garantía. Nuestro equipo especializado está preparado para resolver cualquier problema y asegurar el óptimo funcionamiento de su rifle.</p>
+      </div>
+      
       <h2>Lubricación adecuada</h2>
       
       <p>La lubricación correcta es esencial para el buen funcionamiento de tu rifle PCP. Sin embargo, es importante utilizar los lubricantes adecuados y aplicarlos en las cantidades justas. Un exceso de lubricante puede atraer suciedad y polvo, mientras que una lubricación insuficiente puede provocar un desgaste prematuro de las piezas.</p>
@@ -105,25 +110,6 @@ const blogPosts = {
         <p class="text-sm text-center mt-2 text-white/60">Rifle J. Murrieta modelo J1 con culata de madera oscura</p>
       </div>
       
-      <h2>Calibre 4.5mm (.177)</h2>
-      
-      <p>El calibre 4.5mm es el más pequeño y común en rifles de aire comprimido. Es ideal para tiro deportivo y competición debido a su trayectoria más plana y mayor velocidad.</p>
-      
-      <p><strong>Ventajas:</strong></p>
-      <ul>
-        <li>Mayor velocidad y trayectoria más plana</li>
-        <li>Menor consumo de aire por disparo</li>
-        <li>Munición más económica y fácil de encontrar</li>
-        <li>Ideal para tiro de precisión a distancias medias</li>
-      </ul>
-      
-      <p><strong>Desventajas:</strong></p>
-      <ul>
-        <li>Menor energía de impacto</li>
-        <li>Más afectado por el viento</li>
-        <li>Menor capacidad de penetración</li>
-      </ul>
-      
       <h2>Calibre 5.5mm (.22)</h2>
       
       <p>El calibre 5.5mm ofrece un buen equilibrio entre velocidad y potencia, siendo muy versátil para diferentes tipos de uso.</p>
@@ -131,14 +117,14 @@ const blogPosts = {
       <p><strong>Ventajas:</strong></p>
       <ul>
         <li>Buen equilibrio entre velocidad y potencia</li>
-        <li>Menos afectado por el viento que el 4.5mm</li>
+        <li>Menos afectado por el viento</li>
         <li>Buena precisión a distancias medias</li>
         <li>Versatilidad para diferentes usos</li>
       </ul>
       
       <p><strong>Desventajas:</strong></p>
       <ul>
-        <li>Mayor consumo de aire que el 4.5mm</li>
+        <li>Mayor consumo de aire que calibres menores</li>
         <li>Trayectoria menos plana</li>
       </ul>
       
@@ -195,7 +181,7 @@ const blogPosts = {
       <p>Para elegir el calibre más adecuado para ti, debes considerar varios factores:</p>
       
       <ul>
-        <li><strong>Uso principal:</strong> Para tiro deportivo y competición, el 4.5mm suele ser la mejor opción. Para uso general, el 5.5mm ofrece un buen equilibrio.</li>
+        <li><strong>Uso principal:</strong> Para tiro deportivo y competición, el 5.5mm suele ser una excelente opción. Para uso general, el 5.5mm ofrece un buen equilibrio.</li>
         <li><strong>Distancia de tiro:</strong> Para distancias cortas y medias, los calibres más pequeños son adecuados. Para distancias más largas, considera los calibres mayores.</li>
         <li><strong>Autonomía:</strong> Si prefieres mayor cantidad de disparos por carga, los calibres menores son más eficientes.</li>
         <li><strong>Presupuesto:</strong> Considera no solo el costo inicial, sino también el precio y disponibilidad de la munición.</li>
@@ -205,7 +191,7 @@ const blogPosts = {
       
       <p>La elección del calibre adecuado dependerá principalmente de tus necesidades específicas y preferencias personales. No existe un calibre "perfecto" para todos los usos, por lo que es importante analizar tus prioridades y elegir el que mejor se adapte a ellas.</p>
       
-      <p>En J. Murrieta ofrecemos nuestros rifles en diferentes calibres para satisfacer las necesidades de todos nuestros clientes. No dudes en contactarnos si necesitas asesoramiento personalizado para elegir el calibre que mejor se adapte a tus necesidades.</p>
+      <p>En J. Murrieta ofrecemos nuestros rifles en diferentes calibres (5.5mm, 6.35mm y 7.62mm) para satisfacer las necesidades de todos nuestros clientes. No dudes en contactarnos si necesitas asesoramiento personalizado para elegir el calibre que mejor se adapte a tus necesidades.</p>
     `,
     date: "28 de Marzo, 2025",
     author: "Carlos Rodríguez",
@@ -246,7 +232,7 @@ const blogPosts = {
       
       <p>La fabricación de los componentes metálicos se realiza mediante procesos de mecanizado CNC de alta precisión. Esto nos permite mantener tolerancias extremadamente ajustadas, esenciales para el correcto funcionamiento de un rifle PCP.</p>
       
-      <p>El cañón, uno de los componentes más críticos, se fabrica con un proceso especial que incluye el estriado interior con 6-12 microestrías, dependiendo del calibre. Este proceso es fundamental para garantizar la precisión del disparo.</p>
+      <p>El cañón, uno de los componentes más críticos, se fabrica con un proceso especial que incluye el estriado interior con paso de estría 1/20 una en veinte pulgadas, dependiendo del calibre. Este proceso es fundamental para garantizar la precisión del disparo.</p>
       
       <h2>Trabajo en madera</h2>
       
