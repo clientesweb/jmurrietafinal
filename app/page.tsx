@@ -380,7 +380,7 @@ export default function Home() {
                   <p className="text-white/70 mb-4">
                     Mira telescópica 3-9 X 40 de alta precisión para mejorar la puntería a larga distancia
                   </p>
-                  <p className="text-2xl font-bold text-gold mb-6">$45.000</p>
+                  <p className="text-2xl font-bold text-gold mb-6">Consultar disponibilidad</p>
                   <Button asChild className="w-full bg-gold hover:bg-gold/90 text-black font-cinzel py-6 rounded-none">
                     <Link href="/accesorios/mira-telescopica" className="flex items-center justify-center gap-2">
                       VER DETALLES <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -406,7 +406,7 @@ export default function Home() {
                     Funda de <span className="text-gold">Cuero</span>
                   </h3>
                   <p className="text-white/70 mb-4">Funda premium de cuero engrasado con logo J. Murrieta</p>
-                  <p className="text-2xl font-bold text-gold mb-6">$35.000</p>
+                  <p className="text-2xl font-bold text-gold mb-6">Consultar disponibilidad</p>
                   <Button asChild className="w-full bg-gold hover:bg-gold/90 text-black font-cinzel py-6 rounded-none">
                     <Link href="/accesorios/funda-cuero" className="flex items-center justify-center gap-2">
                       VER DETALLES <ArrowRight className="h-4 w-4" aria-hidden="true" />
