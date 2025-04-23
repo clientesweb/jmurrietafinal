@@ -333,7 +333,7 @@ export default function AccesorioDetailPage({ params }: { params: { slug: string
               </div>
 
               <div className="border-t border-b border-gold/20 py-4 my-6">
-                <div className="text-3xl font-bold text-gold">${accesorio.price.toLocaleString()}</div>
+                <div className="text-3xl font-bold text-gold">Consultar disponibilidad</div>
                 <div className="text-sm text-white/60 mt-1">
                   En stock (<span className="text-gold">{accesorio.stock}</span> disponibles)
                 </div>
