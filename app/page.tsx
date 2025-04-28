@@ -167,7 +167,7 @@ export default function Home() {
         "@type": "ListItem",
         position: 1,
         url: "https://jmurrietapcp.com/rifles/rifle-murrieta-j1",
-        name: "Rifle Murrieta J1",
+        name: "Murrieta MOD. J1",
         image: "https://jmurrietapcp.com/images/rifle-j1-real-2.jpeg",
         description:
           "Diseño tradicional con cañón estriado CZ para máxima precisión a distancia. Fabricación de alta calidad con mecanizado CNC.",
@@ -176,7 +176,7 @@ export default function Home() {
         "@type": "ListItem",
         position: 2,
         url: "https://jmurrietapcp.com/rifles/rifle-murrieta-bullpup",
-        name: "Rifle Murrieta BULLPUP",
+        name: "Murrieta MOD. BULLPUP",
         image: "https://jmurrietapcp.com/images/rifle-bullpup-real-2.jpeg",
         description:
           "Diseño compacto con cañón estriado CZ para potencia y precisión excepcionales. Fabricación premium con mecanizado CNC.",
@@ -242,7 +242,7 @@ export default function Home() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Rifle Murrieta <span className="text-gold">J1</span>
+                    Murrieta MOD. <span className="text-gold">J1</span>
                   </h3>
                   <p className="text-white/70 mb-4">
                     Diseño tradicional con cañón estriado CZ para máxima precisión a distancia. Fabricación de alta
@@ -275,7 +275,7 @@ export default function Home() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Rifle Murrieta <span className="text-gold">BULLPUP</span>
+                    Murrieta MOD. <span className="text-gold">BULLPUP</span>
                   </h3>
                   <p className="text-white/70 mb-4">
                     Diseño compacto con cañón estriado CZ para potencia y precisión excepcionales. Fabricación premium
