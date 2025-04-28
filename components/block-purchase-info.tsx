@@ -20,7 +20,7 @@ export function BlockPurchaseInfo() {
               <CreditCard className="purchase-info-icon" strokeWidth={1.5} />
             </div>
             <div className="purchase-info-content">
-              <h3 className="purchase-info-title">HASTA 12 CUOTAS</h3>
+              <h3 className="purchase-info-title">3 y 6 CUOTAS</h3>
               <p className="purchase-info-subtitle">CON TODAS LAS TARJETAS</p>
             </div>
           </div>
