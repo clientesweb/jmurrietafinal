@@ -62,6 +62,116 @@ export default function HistoriaPage() {
           </div>
         </section>
 
+        {/* Nueva sección de Mecanizados Propios */}
+        <section className="py-16 bg-black">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center text-white mb-4">
+              Mecanizados <span className="text-gold">Propios</span>
+            </h2>
+            <p className="text-white/80 text-center max-w-3xl mx-auto mb-12">
+              En J. Murrieta, nos enorgullecemos de realizar todos nuestros mecanizados de forma interna. Esto nos
+              permite mantener un control total sobre la calidad y precisión de cada componente que forma parte de
+              nuestros rifles.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <div className="bg-zinc-900 rounded-lg overflow-hidden border border-gold/20 hover:border-gold transition-all duration-300">
+                <div className="relative h-64">
+                  <Image src="/images/mecanizados1.jpeg" alt="Manómetros J. Murrieta" fill className="object-cover" />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold text-gold mb-2">Manómetros de Precisión</h3>
+                  <p className="text-white/80">
+                    Fabricamos nuestros propios manómetros con la marca J. Murrieta, garantizando lecturas precisas de
+                    presión para un rendimiento óptimo.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-zinc-900 rounded-lg overflow-hidden border border-gold/20 hover:border-gold transition-all duration-300">
+                <div className="relative h-64">
+                  <Image
+                    src="/images/mecanizados2.jpeg"
+                    alt="Válvulas y reguladores J. Murrieta"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold text-gold mb-2">Válvulas y Reguladores</h3>
+                  <p className="text-white/80">
+                    Cada válvula y regulador es mecanizado con precisión milimétrica para asegurar un flujo de aire
+                    constante y controlado.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-zinc-900 rounded-lg overflow-hidden border border-gold/20 hover:border-gold transition-all duration-300">
+                <div className="relative h-64">
+                  <Image
+                    src="/images/mecanizados3.jpeg"
+                    alt="Cañones mecanizados J. Murrieta"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold text-gold mb-2">Cañones de Alta Precisión</h3>
+                  <p className="text-white/80">
+                    Nuestros cañones son mecanizados con tecnología de punta para garantizar trayectorias perfectas y
+                    agrupaciones excepcionales.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-zinc-900 rounded-lg overflow-hidden border border-gold/20 hover:border-gold transition-all duration-300">
+                <div className="relative h-64">
+                  <Image
+                    src="/images/mecanizados4.jpeg"
+                    alt="Materia prima J. Murrieta"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold text-gold mb-2">Selección de Materiales</h3>
+                  <p className="text-white/80">
+                    Utilizamos solo los mejores materiales, seleccionados cuidadosamente para asegurar durabilidad y
+                    resistencia en cada componente.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-zinc-900 rounded-lg overflow-hidden border border-gold/20 hover:border-gold transition-all duration-300">
+                <div className="relative h-64">
+                  <Image
+                    src="/images/mecanizados5.jpeg"
+                    alt="Maquinaria de precisión J. Murrieta"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold text-gold mb-2">Tecnología de Vanguardia</h3>
+                  <p className="text-white/80">
+                    Contamos con maquinaria especializada que nos permite realizar mecanizados de alta precisión para
+                    cada componente de nuestros rifles.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-white/80 max-w-3xl mx-auto">
+                Nuestro proceso de fabricación interno nos permite mantener estándares de calidad excepcionales y
+                ofrecer productos que superan las expectativas de los tiradores más exigentes.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 bg-zinc-900">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center text-white mb-12">
