@@ -27,7 +27,7 @@ export default function AccesoriosPage() {
       id: "mira-telescopica",
       name: "Mira Telescópica 3-9 X 40",
       description: "Mira de alta precisión para mejorar la puntería a larga distancia",
-      price: "$45.000",
+      price: "$85.000",
       image: "/images/accesorios/mira-telescopica.jpeg",
       slug: "mira-telescopica",
     },
@@ -35,7 +35,7 @@ export default function AccesoriosPage() {
       id: "cargador-rotativo",
       name: "Cargador Rotativo 3D",
       description: "Cargador rotativo para calibres 5.50, 6.35 y 7.62",
-      price: "$12.000",
+      price: "$18.000",
       image: "/images/accesorios/cargador-rotativo.jpeg",
       slug: "cargador-rotativo",
     },
@@ -43,7 +43,7 @@ export default function AccesoriosPage() {
       id: "funda-tela",
       name: "Funda de Tela",
       description: "Fundas de tela para modelos J1 y Bullpup",
-      price: "$18.000",
+      price: "$50.000",
       image: "/images/accesorios/funda-tela.jpeg",
       slug: "funda-tela",
     },
@@ -51,7 +51,7 @@ export default function AccesoriosPage() {
       id: "funda-cuero",
       name: "Funda de Cuero Engrasado",
       description: "Funda premium de cuero engrasado con logo J. Murrieta",
-      price: "$35.000",
+      price: "$220.000",
       image: "/images/accesorios/funda-cuero.jpeg",
       slug: "funda-cuero",
     },
@@ -67,7 +67,7 @@ export default function AccesoriosPage() {
       id: "inflador-pcp",
       name: "Inflador PCP AIRVAM B-300",
       description: "Bomba de alta presión para cargar tu rifle PCP",
-      price: "$65.000",
+      price: "$230.000",
       image: "/images/accesorios/inflador-pcp.jpeg",
       slug: "inflador-pcp",
     },
@@ -75,7 +75,7 @@ export default function AccesoriosPage() {
       id: "pico-carga",
       name: "Pico de Carga",
       description: "Picos de carga con acople rápido o A.V.",
-      price: "$8.000",
+      price: "$9.000",
       image: "/images/accesorios/pico-carga.jpeg",
       slug: "pico-carga",
     },
@@ -83,7 +83,7 @@ export default function AccesoriosPage() {
       id: "cuna-monotiro",
       name: "Cuña Monotiro",
       description: "Cuña monotiro para calibres 5.50, 6.35 y 7.62",
-      price: "$6.500",
+      price: "$5.000",
       image: "/images/accesorios/cuna-monotiro.jpeg",
       slug: "cuna-monotiro",
     },
@@ -123,7 +123,7 @@ export default function AccesoriosPage() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-white mb-2">{accesorio.name}</h3>
                     <p className="text-white/70 mb-4">{accesorio.description}</p>
-                    <p className="text-xl font-bold text-gold mb-6">Consultar disponibilidad</p>
+                    <p className="text-xl font-bold text-gold mb-6">{accesorio.price}</p>
                     <Button asChild className="w-full bg-gold hover:bg-gold/90 text-black">
                       <Link href={`/accesorios/${accesorio.slug}`} className="flex items-center justify-center gap-2">
                         VER DETALLES <ArrowRight className="h-4 w-4" />
