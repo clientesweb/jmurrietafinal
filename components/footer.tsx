@@ -1,5 +1,16 @@
 import Link from "next/link"
-import { Facebook, Instagram, MapPin, Phone, Mail, Clock, Heart, ChevronRight, Youtube } from "lucide-react"
+import {
+  Facebook,
+  Instagram,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Heart,
+  ChevronRight,
+  Youtube,
+  PhoneIcon as WhatsApp,
+} from "lucide-react"
 import { ImageWithFallback } from "@/components/ui/image-with-fallback"
 
 export function Footer() {
@@ -216,12 +227,14 @@ export function Footer() {
                     className="w-8 h-8 rounded-full bg-black flex items-center justify-center border border-gold/30"
                     aria-hidden="true"
                   >
-                    <Phone className="h-4 w-4 text-gold" strokeWidth={1.5} />
+                    <WhatsApp className="h-4 w-4 text-gold" strokeWidth={1.5} />
                   </div>
                   <Link
-                    href="tel:+5493515371671"
+                    href="https://wa.me/5493515371671"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white hover:text-gold transition-colors"
-                    aria-label="Llamar al teléfono +54 9 351 537 1671"
+                    aria-label="Contactar por WhatsApp al +54 9 351 537 1671"
                   >
                     +54 9 351 537 1671
                   </Link>
