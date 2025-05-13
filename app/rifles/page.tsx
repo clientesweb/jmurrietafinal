@@ -63,7 +63,7 @@ export default function RiflesPage() {
   const rifles = [
     {
       id: "j1-5.5",
-      name: "Rifle Murrieta J1 Cal. 5,5",
+      name: "J. MURRIETA MOD. J1 Cal. 5,5",
       description: "Con cargador y supresor. Diseño tradicional ideal para tiro de precisión a distancia.",
       price: formatPrice(j1FinalPrices["5.5"]),
       originalPrice: formatPrice(j1InflatedPrices["5.5"]),
@@ -72,7 +72,7 @@ export default function RiflesPage() {
     },
     {
       id: "j1-6.35",
-      name: "Rifle Murrieta J1 Cal. 6,35",
+      name: "J. MURRIETA MOD. J1 Cal. 6,35",
       description: "Con cargador y supresor. Mayor potencia para distancias medias y largas.",
       price: formatPrice(j1FinalPrices["6.35"]),
       originalPrice: formatPrice(j1InflatedPrices["6.35"]),
@@ -81,7 +81,7 @@ export default function RiflesPage() {
     },
     {
       id: "j1-7.62",
-      name: "Rifle Murrieta J1 Cal. 7,62",
+      name: "J. MURRIETA MOD. J1 Cal. 7,62",
       description: "Con cargador y supresor. Máxima potencia para caza mayor y tiro a larga distancia.",
       price: formatPrice(j1FinalPrices["7.62"]),
       originalPrice: formatPrice(j1InflatedPrices["7.62"]),
@@ -90,7 +90,7 @@ export default function RiflesPage() {
     },
     {
       id: "bullpup-5.5",
-      name: "Rifle Murrieta BULLPUP Cal. 5,5",
+      name: "J. MURRIETA MOD. BULLPUP Cal. 5,5",
       description: "Con cargador y supresor. Diseño compacto para mayor movilidad sin comprometer potencia.",
       price: formatPrice(bullpupFinalPrices["5.5"]),
       originalPrice: formatPrice(bullpupInflatedPrices["5.5"]),
@@ -99,7 +99,7 @@ export default function RiflesPage() {
     },
     {
       id: "bullpup-6.35",
-      name: "Rifle Murrieta BULLPUP Cal. 6,35",
+      name: "J. MURRIETA MOD. BULLPUP Cal. 6,35",
       description: "Con cargador y supresor. Equilibrio perfecto entre potencia y maniobrabilidad.",
       price: formatPrice(bullpupFinalPrices["6.35"]),
       originalPrice: formatPrice(bullpupInflatedPrices["6.35"]),
@@ -108,7 +108,7 @@ export default function RiflesPage() {
     },
     {
       id: "bullpup-7.62",
-      name: "Rifle Murrieta BULLPUP Cal. 7,62",
+      name: "J. MURRIETA MOD. BULLPUP Cal. 7,62",
       description: "Con cargador y supresor. Máxima potencia en un diseño compacto y ergonómico.",
       price: formatPrice(bullpupFinalPrices["7.62"]),
       originalPrice: formatPrice(bullpupInflatedPrices["7.62"]),
@@ -167,7 +167,7 @@ export default function RiflesPage() {
         <section className="py-16 bg-zinc-900">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center text-white mb-8">
-              Modelo <span className="text-gold">J1</span>
+              J. MURRIETA MOD. <span className="text-gold">J1</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {rifles.slice(0, 3).map((rifle) => (
@@ -209,7 +209,7 @@ export default function RiflesPage() {
             </div>
 
             <h2 className="text-3xl font-bold text-center text-white mt-16 mb-8">
-              Modelo <span className="text-gold">BULLPUP</span>
+              J. MURRIETA MOD. <span className="text-gold">BULLPUP</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {rifles.slice(3).map((rifle) => (
