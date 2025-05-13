@@ -2,19 +2,19 @@ import RifleMurrietaJ1Client from "./RifleMurrietaJ1Client"
 
 // Añadir metadatos específicos para la página del rifle J1
 export const metadata = {
-  title: "Rifle Murrieta J1 | Precisión y Elegancia",
+  title: "J. MURRIETA MOD. J1 | Precisión y Elegancia",
   description:
-    "El Rifle Murrieta J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
+    "El J. MURRIETA MOD. J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
   openGraph: {
-    title: "Rifle Murrieta J1 | Precisión y Elegancia",
+    title: "J. MURRIETA MOD. J1 | Precisión y Elegancia",
     description:
-      "El Rifle Murrieta J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
+      "El J. MURRIETA MOD. J1, fabricado artesanalmente en Argentina. Diseño tradicional tipo carabina con cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Precisión excepcional, diseño elegante y acabados de primera calidad.",
     images: [
       {
         url: "https://jmurrietapcp.com/images/rifle-j1-real-1.jpeg",
         width: 1200,
         height: 630,
-        alt: "Rifle Murrieta J1",
+        alt: "J. MURRIETA MOD. J1",
       },
     ],
   },
@@ -23,10 +23,10 @@ export const metadata = {
 // Datos del producto
 export const productData = {
   id: "j1",
-  name: "Rifle Murrieta J1",
-  fullName: "Rifle Murrieta J1",
+  name: "J. MURRIETA MOD. J1",
+  fullName: "J. MURRIETA MOD. J1",
   description:
-    "El Rifle Murrieta J1 es el resultado de años de investigación y desarrollo, combinando la tradición artesanal con la más avanzada tecnología. Su diseño tradicional tipo carabina ofrece un equilibrio perfecto entre estabilidad y maniobrabilidad, ideal para tiro de precisión a distancia. Cada componente ha sido cuidadosamente seleccionado y ensamblado para garantizar un rendimiento excepcional tiro tras tiro.",
+    "El J. MURRIETA MOD. J1 es el resultado de años de investigación y desarrollo, combinando la tradición artesanal con la más avanzada tecnología. Su diseño tradicional tipo carabina ofrece un equilibrio perfecto entre estabilidad y maniobrabilidad, ideal para tiro de precisión a distancia. Cada componente ha sido cuidadosamente seleccionado y ensamblado para garantizar un rendimiento excepcional tiro tras tiro.",
   shortDescription:
     "Diseño tradicional con cañón estriado CZ para máxima precisión a distancia. Fabricación de alta calidad con mecanizado CNC.",
   calibers: [
