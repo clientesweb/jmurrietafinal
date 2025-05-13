@@ -242,7 +242,7 @@ export default function Home() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Murrieta MOD. <span className="text-gold">J1</span>
+                    J. MURRIETA MOD. <span className="text-gold">J1</span>
                   </h3>
                   <p className="text-white/70 mb-4">
                     Diseño tradicional con cañón estriado CZ para máxima precisión a distancia. Fabricación de alta
@@ -275,7 +275,7 @@ export default function Home() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-2">
-                    Murrieta MOD. <span className="text-gold">BULLPUP</span>
+                    J. MURRIETA MOD. <span className="text-gold">BULLPUP</span>
                   </h3>
                   <p className="text-white/70 mb-4">
                     Diseño compacto con cañón estriado CZ para potencia y precisión excepcionales. Fabricación premium
@@ -380,7 +380,7 @@ export default function Home() {
                   <p className="text-white/70 mb-4">
                     Mira telescópica 3-9 X 40 de alta precisión para mejorar la puntería a larga distancia
                   </p>
-                  <p className="text-2xl font-bold text-gold mb-6">Consultar disponibilidad</p>
+                  <p className="text-2xl font-bold text-gold mb-6">$85.000</p>
                   <Button asChild className="w-full bg-gold hover:bg-gold/90 text-black font-cinzel py-6 rounded-none">
                     <Link href="/accesorios/mira-telescopica" className="flex items-center justify-center gap-2">
                       VER DETALLES <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -406,7 +406,7 @@ export default function Home() {
                     Funda de <span className="text-gold">Cuero</span>
                   </h3>
                   <p className="text-white/70 mb-4">Funda premium de cuero engrasado con logo J. Murrieta</p>
-                  <p className="text-2xl font-bold text-gold mb-6">Consultar disponibilidad</p>
+                  <p className="text-2xl font-bold text-gold mb-6">$220.000</p>
                   <Button asChild className="w-full bg-gold hover:bg-gold/90 text-black font-cinzel py-6 rounded-none">
                     <Link href="/accesorios/funda-cuero" className="flex items-center justify-center gap-2">
                       VER DETALLES <ArrowRight className="h-4 w-4" aria-hidden="true" />
