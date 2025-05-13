@@ -212,6 +212,45 @@ const blogPosts = {
         <img src="/images/blog/rifles-produccion.jpeg" alt="Rifles J. Murrieta en producción" class="w-full rounded-lg shadow-md" />
         <p class="text-sm text-center mt-2 text-white/60">Rifles J. Murrieta durante el proceso de producción</p>
       </div>
+
+      <h2>Nuestros Mecanizados Propios</h2>
+
+      <p>En J. Murrieta, nos enorgullecemos de realizar todos nuestros mecanizados de forma interna. Esto nos permite mantener un control total sobre la calidad y precisión de cada componente que forma parte de nuestros rifles.</p>
+
+      <div class="my-6">
+        <img src="/images/mecanizados1.jpeg" alt="Manómetros de precisión J. Murrieta" class="w-full rounded-lg shadow-md" />
+        <p class="text-sm text-center mt-2 text-white/60">Manómetros de precisión fabricados por J. Murrieta</p>
+      </div>
+
+      <p>Fabricamos nuestros propios manómetros con la marca J. Murrieta, garantizando lecturas precisas de presión para un rendimiento óptimo. Cada manómetro es calibrado individualmente para asegurar mediciones exactas.</p>
+
+      <div class="my-6">
+        <img src="/images/mecanizados2.jpeg" alt="Válvulas y reguladores J. Murrieta" class="w-full rounded-lg shadow-md" />
+        <p class="text-sm text-center mt-2 text-white/60">Válvulas y reguladores mecanizados con precisión milimétrica</p>
+      </div>
+
+      <p>Cada válvula y regulador es mecanizado con precisión milimétrica para asegurar un flujo de aire constante y controlado. Estos componentes son el corazón del sistema PCP y determinan en gran medida la consistencia en la velocidad de los proyectiles.</p>
+
+      <div class="my-6">
+        <img src="/images/mecanizados3.jpeg" alt="Cañones de alta precisión J. Murrieta" class="w-full rounded-lg shadow-md" />
+        <p class="text-sm text-center mt-2 text-white/60">Cañones mecanizados con tecnología de punta</p>
+      </div>
+
+      <p>Nuestros cañones son mecanizados con tecnología de punta para garantizar trayectorias perfectas y agrupaciones excepcionales. El proceso comienza con la selección de barras de acero de la más alta calidad.</p>
+
+      <div class="my-6">
+        <img src="/images/mecanizados4.jpeg" alt="Selección de materiales J. Murrieta" class="w-full rounded-lg shadow-md" />
+        <p class="text-sm text-center mt-2 text-white/60">Selección cuidadosa de materiales para cada componente</p>
+      </div>
+
+      <p>Utilizamos solo los mejores materiales, seleccionados cuidadosamente para asegurar durabilidad y resistencia en cada componente. Nuestro proceso de selección incluye pruebas de dureza, resistencia a la corrosión y comportamiento bajo presión.</p>
+
+      <div class="my-6">
+        <img src="/images/mecanizados5.jpeg" alt="Tecnología de vanguardia J. Murrieta" class="w-full rounded-lg shadow-md" />
+        <p class="text-sm text-center mt-2 text-white/60">Maquinaria especializada para mecanizados de alta precisión</p>
+      </div>
+
+      <p>Contamos con maquinaria especializada que nos permite realizar mecanizados de alta precisión para cada componente de nuestros rifles. Nuestro taller está equipado con tornos CNC, fresadoras y equipos de medición de última generación.</p>
       
       <h2>Selección de materiales</h2>
       
