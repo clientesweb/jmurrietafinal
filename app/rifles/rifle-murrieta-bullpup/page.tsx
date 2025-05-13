@@ -2,19 +2,19 @@ import RifleBullpupPageClient from "./rifle-bullpup-page-client"
 
 // Añadir metadatos específicos para la página del rifle Bullpup
 export const metadata = {
-  title: "Rifle Murrieta Bullpup | Compacto y Potente",
+  title: "J. MURRIETA MOD. BULLPUP | Compacto y Potente",
   description:
-    "El Rifle Murrieta Bullpup, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
+    "El J. MURRIETA MOD. BULLPUP, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
   openGraph: {
-    title: "Rifle Murrieta Bullpup | Compacto y Potente",
+    title: "J. MURRIETA MOD. BULLPUP | Compacto y Potente",
     description:
-      "El Rifle Murrieta Bullpup, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
+      "El J. MURRIETA MOD. BULLPUP, diseño compacto con potencia y precisión excepcionales. Cañón estriado de 550mm con paso de estría 1/20 una en veinte pulgadas. Disponible en diferentes calibres y opciones de culata. Fabricado artesanalmente en Argentina para tiro deportivo de alto nivel.",
     images: [
       {
         url: "https://jmurrietapcp.com/images/rifle-bullpup-real-1.jpeg",
         width: 1200,
         height: 630,
-        alt: "Rifle Murrieta Bullpup",
+        alt: "J. MURRIETA MOD. BULLPUP",
       },
     ],
   },
@@ -24,10 +24,10 @@ export default function ProductPage() {
   // Datos del producto
   const product = {
     id: "bullpup",
-    name: "Rifle Murrieta BULLPUP",
-    fullName: "Rifle Murrieta BULLPUP",
+    name: "J. MURRIETA MOD. BULLPUP",
+    fullName: "J. MURRIETA MOD. BULLPUP",
     description:
-      "El Murrieta BULLPUP está diseñado para aquellos que buscan un rifle más compacto y manejable. Su tamaño reducido lo hace ideal para situaciones que requieren mayor movilidad, sin comprometer la potencia ni la precisión del disparo. La combinación de materiales avanzados y tecnología de punta garantiza una precisión excepcional tiro tras tiro, incluso en las condiciones más exigentes.",
+      "El J. MURRIETA MOD. BULLPUP está diseñado para aquellos que buscan un rifle más compacto y manejable. Su tamaño reducido lo hace ideal para situaciones que requieren mayor movilidad, sin comprometer la potencia ni la precisión del disparo. La combinación de materiales avanzados y tecnología de punta garantiza una precisión excepcional tiro tras tiro, incluso en las condiciones más exigentes.",
     shortDescription:
       "Diseño compacto con cañón estriado CZ para potencia y precisión excepcionales. Fabricación premium con mecanizado CNC.",
     stock: 12,
@@ -81,7 +81,7 @@ export default function ProductPage() {
   const relatedProducts = [
     {
       id: "j1",
-      name: "Rifle Murrieta J1",
+      name: "J. MURRIETA MOD. J1",
       slug: "rifle-murrieta-j1",
       price: 575000,
       image: "/images/rifle-j1-real-2.jpeg",
