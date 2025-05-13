@@ -19,7 +19,7 @@ const accesorios = [
     name: "Mira Telescópica 3-9 X 40",
     description:
       "Mira de alta precisión para mejorar la puntería a larga distancia. Ideal para tiro deportivo y caza. Cuenta con ajustes de elevación y deriva, así como un retículo iluminado para condiciones de poca luz.",
-    price: 45000,
+    price: 85000,
     image: "/images/accesorios/mira-telescopica.jpeg",
     slug: "mira-telescopica",
     features: [
@@ -41,7 +41,7 @@ const accesorios = [
     name: "Cargador Rotativo 3D",
     description:
       "Cargador rotativo fabricado con impresión 3D de alta calidad. Disponible para calibres 5.50, 6.35 y 7.62. Permite cargar múltiples proyectiles para disparos consecutivos sin necesidad de recargar manualmente entre disparos.",
-    price: 12000,
+    price: 18000,
     image: "/images/accesorios/cargador-rotativo.jpeg",
     slug: "cargador-rotativo",
     features: [
@@ -63,7 +63,7 @@ const accesorios = [
     name: "Funda de Tela",
     description:
       "Fundas de tela resistente y acolchada para proteger tu rifle durante el transporte y almacenamiento. Disponible para modelos J1 y Bullpup, con bolsillos adicionales para accesorios y cierre de cremallera reforzado.",
-    price: 18000,
+    price: 50000,
     image: "/images/accesorios/funda-tela.jpeg",
     slug: "funda-tela",
     features: [
@@ -85,7 +85,7 @@ const accesorios = [
     name: "Funda de Cuero Engrasado",
     description:
       "Funda premium fabricada en cuero engrasado de alta calidad con el logo de J. Murrieta grabado. Ofrece protección superior y un aspecto elegante y tradicional. Ideal para quienes buscan durabilidad y estilo.",
-    price: 35000,
+    price: 220000,
     image: "/images/accesorios/funda-cuero.jpeg",
     slug: "funda-cuero",
     features: [
@@ -130,7 +130,7 @@ const accesorios = [
     name: "Inflador PCP AIRVAM B-300",
     description:
       "Bomba de alta presión AIRVAM B-300 para cargar tu rifle PCP. Diseñada para alcanzar hasta 300 BAR con mínimo esfuerzo gracias a su sistema de tres etapas. Incluye filtro de humedad y manómetro de precisión.",
-    price: 65000,
+    price: 230000,
     image: "/images/accesorios/inflador-pcp.jpeg",
     slug: "inflador-pcp",
     features: [
@@ -153,7 +153,7 @@ const accesorios = [
     name: "Pico de Carga",
     description:
       "Picos de carga con acople rápido o A.V. fabricados en aluminio de alta calidad. Permiten una conexión segura entre la bomba o tanque de aire y tu rifle PCP para una carga eficiente y sin pérdidas de presión.",
-    price: 8000,
+    price: 9000,
     image: "/images/accesorios/pico-carga.jpeg",
     slug: "pico-carga",
     features: [
@@ -175,7 +175,7 @@ const accesorios = [
     name: "Cuña Monotiro",
     description:
       "Cuña monotiro fabricada con impresión 3D de alta calidad para calibres 5.50, 6.35 y 7.62. Permite cargar y disparar un único proyectil a la vez, ideal para tiro de precisión o cuando se busca la máxima exactitud.",
-    price: 6500,
+    price: 5000,
     image: "/images/accesorios/cuna-monotiro.jpeg",
     slug: "cuna-monotiro",
     features: [
@@ -333,7 +333,7 @@ export default function AccesorioDetailPage({ params }: { params: { slug: string
               </div>
 
               <div className="border-t border-b border-gold/20 py-4 my-6">
-                <div className="text-3xl font-bold text-gold">Consultar disponibilidad</div>
+                <div className="text-3xl font-bold text-gold">${accesorio.price.toLocaleString()}</div>
                 <div className="text-sm text-white/60 mt-1">
                   En stock (<span className="text-gold">{accesorio.stock}</span> disponibles)
                 </div>
