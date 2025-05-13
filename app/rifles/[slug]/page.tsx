@@ -23,10 +23,10 @@ import { ReviewsSection } from "@/components/reviews-section"
 const riflesData = {
   "rifle-murrieta-j1": {
     id: "j1",
-    name: "Rifle Murrieta J1",
-    fullName: "Rifle Murrieta J1",
+    name: "J. MURRIETA MOD. J1",
+    fullName: "J. MURRIETA MOD. J1",
     description:
-      "El Murrieta J1 destaca por su diseño tradicional tipo carabina, ideal para usuarios que prefieren una estructura más larga y estable. Cada detalle ha sido cuidadosamente diseñado para ofrecer una experiencia de tiro incomparable, combinando la robustez con la precisión. Perfecto para tiro de precisión a distancia, este rifle representa la fusión perfecta entre tecnología avanzada y tradición artesanal.",
+      "El J. MURRIETA MOD. J1 destaca por su diseño tradicional tipo carabina, ideal para usuarios que prefieren una estructura más larga y estable. Cada detalle ha sido cuidadosamente diseñado para ofrecer una experiencia de tiro incomparable, combinando la robustez con la precisión. Perfecto para tiro de precisión a distancia, este rifle representa la fusión perfecta entre tecnología avanzada y tradición artesanal.",
     shortDescription: "Diseño tradicional ideal para tiro de precisión a distancia",
     price: 89999,
     rating: 4.8,
@@ -70,10 +70,10 @@ const riflesData = {
   },
   "rifle-murrieta-bullpup": {
     id: "bullpup",
-    name: "Rifle Murrieta BULLPUP",
-    fullName: "Rifle Murrieta BULLPUP",
+    name: "J. MURRIETA MOD. BULLPUP",
+    fullName: "J. MURRIETA MOD. BULLPUP",
     description:
-      "El Murrieta BULLPUP está diseñado para aquellos que buscan un rifle más compacto y manejable. Su tamaño reducido lo hace ideal para situaciones que requieren mayor movilidad, sin comprometer la potencia ni la precisión del disparo. La combinación de materiales avanzados y tecnología de punta garantiza una precisión excepcional tiro tras tiro, incluso en las condiciones más exigentes.",
+      "El J. MURRIETA MOD. BULLPUP está diseñado para aquellos que buscan un rifle más compacto y manejable. Su tamaño reducido lo hace ideal para situaciones que requieren mayor movilidad, sin comprometer la potencia ni la precisión del disparo. La combinación de materiales avanzados y tecnología de punta garantiza una precisión excepcional tiro tras tiro, incluso en las condiciones más exigentes.",
     shortDescription: "Diseño compacto para mayor movilidad sin comprometer potencia",
     price: 109999,
     rating: 4.9,
@@ -121,7 +121,7 @@ const riflesData = {
 const relatedProducts = [
   {
     id: "j1",
-    name: "Rifle Murrieta J1",
+    name: "J. MURRIETA MOD. J1",
     slug: "rifle-murrieta-j1",
     price: 89999,
     image: "/images/rifle-j1.jpg",
@@ -129,7 +129,7 @@ const relatedProducts = [
   },
   {
     id: "bullpup",
-    name: "Rifle Murrieta BULLPUP",
+    name: "J. MURRIETA MOD. BULLPUP",
     slug: "rifle-murrieta-bullpup",
     price: 109999,
     image: "/images/rifle-bullpup.jpg",
@@ -290,11 +290,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   <h1 className="text-3xl font-bold text-white">
                     {product.id === "j1" ? (
                       <>
-                        Rifle Murrieta <span className="text-gold">J1</span>
+                        J. MURRIETA MOD. <span className="text-gold">J1</span>
                       </>
                     ) : (
                       <>
-                        Rifle Murrieta <span className="text-gold">BULLPUP</span>
+                        J. MURRIETA MOD. <span className="text-gold">BULLPUP</span>
                       </>
                     )}
                   </h1>
