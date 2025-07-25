@@ -7,7 +7,7 @@ import Link from "next/link"
 const announcements = [
   {
     text: "ENVÍOS A TODO EL PAÍS | ",
-    highlight: "3 CUOTAS SIN INTERÉS",
+    highlight: "",
     link: "/",
   },
   {
