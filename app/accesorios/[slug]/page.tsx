@@ -19,7 +19,7 @@ const accesorios = [
     name: "Mira Telescópica 3-9 X 40",
     description:
       "Mira de alta precisión para mejorar la puntería a larga distancia. Ideal para tiro deportivo y caza. Cuenta con ajustes de elevación y deriva, así como un retículo iluminado para condiciones de poca luz.",
-    price: 85000,
+    price: 150000,
     image: "/images/accesorios/mira-telescopica.jpeg",
     slug: "mira-telescopica",
     features: [
@@ -41,7 +41,7 @@ const accesorios = [
     name: "Cargador Rotativo 3D",
     description:
       "Cargador rotativo fabricado con impresión 3D de alta calidad. Disponible para calibres 5.50, 6.35 y 7.62. Permite cargar múltiples proyectiles para disparos consecutivos sin necesidad de recargar manualmente entre disparos.",
-    price: 18000,
+    price: 22000,
     image: "/images/accesorios/cargador-rotativo.jpeg",
     slug: "cargador-rotativo",
     features: [
