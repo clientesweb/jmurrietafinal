@@ -56,16 +56,6 @@ const paymentOptions = [
     description: "Pago completo mediante transferencia bancaria",
   },
   {
-    id: "3-cuotas",
-    name: "3 Cuotas",
-    description: "Pago en 3 cuotas (consultar detalles por WhatsApp)",
-  },
-  {
-    id: "6-cuotas",
-    name: "6 Cuotas",
-    description: "Pago en 6 cuotas (consultar detalles por WhatsApp)",
-  },
-  {
     id: "efectivo",
     name: "Efectivo",
     description: "Pago en efectivo (solo para retiro en local)",
@@ -642,7 +632,7 @@ export default function CheckoutPage() {
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button
                         variant="outline"
-                        className="flex-1 border-gold/30 text-gold hover:bg-gold/10"
+                        className="flex-1 border-gold/30 text-gold hover:bg-gold/10 bg-transparent"
                         onClick={handlePreviousStep}
                       >
                         Volver
