@@ -32,8 +32,8 @@ export const productData = {
   calibers: [
     {
       name: "Calibre 5.5mm",
-      price: 575000, // Precio final
-      inflatedPrice: 632500, // Precio inflado (10% más)
+      price: 632500, // Precio final
+      inflatedPrice: 695750, // Precio inflado (10% más)
       specs: {
         velocity: "950-1050 fps (200 bar)",
         autonomy: "35-40 disparos óptimos (200 bar)",
@@ -41,8 +41,8 @@ export const productData = {
     },
     {
       name: "Calibre 6.35mm",
-      price: 625000, // Precio final
-      inflatedPrice: 687500, // Precio inflado (10% más)
+      price: 687500, // Precio final
+      inflatedPrice: 756250, // Precio inflado (10% más)
       specs: {
         velocity: "950-1050 fps (200 bar)",
         autonomy: "25-30 disparos óptimos (200 bar)",
@@ -50,8 +50,8 @@ export const productData = {
     },
     {
       name: "Calibre 7.62mm",
-      price: 725000, // Precio final
-      inflatedPrice: 797500, // Precio inflado (10% más)
+      price: 797500, // Precio final
+      inflatedPrice: 877250, // Precio inflado (10% más)
       specs: {
         velocity: "950-1050 fps (200 bar)",
         autonomy: "10-15 disparos óptimos (200 bar)",
