@@ -233,7 +233,7 @@ export default function RifleMurrietaJ1Client({ product }) {
                     <Button
                       variant="outline"
                       size="icon"
-                      className="rounded-r-none border-gold/30 text-gold"
+                      className="rounded-r-none border-gold/30 text-gold bg-transparent"
                       onClick={() => handleQuantityChange(quantity - 1)}
                       disabled={quantity <= 1}
                     >
@@ -245,7 +245,7 @@ export default function RifleMurrietaJ1Client({ product }) {
                     <Button
                       variant="outline"
                       size="icon"
-                      className="rounded-l-none border-gold/30 text-gold"
+                      className="rounded-l-none border-gold/30 text-gold bg-transparent"
                       onClick={() => handleQuantityChange(quantity + 1)}
                       disabled={quantity >= (product.stock || 10)}
                     >
@@ -319,7 +319,7 @@ export default function RifleMurrietaJ1Client({ product }) {
                     id: "bullpup",
                     name: "Rifle Murrieta BULLPUP",
                     slug: "rifle-murrieta-bullpup",
-                    price: 645000,
+                    price: 709500,
                     image: "/images/rifle-bullpup-real-2.jpeg",
                     category: "rifles",
                   },
@@ -364,7 +364,11 @@ export default function RifleMurrietaJ1Client({ product }) {
                         </Link>
                       </h3>
                       <p className="font-bold text-lg text-gold mb-3">{formatCurrency(relatedProduct.price)}</p>
-                      <Button asChild variant="outline" className="w-full border-gold/30 text-gold hover:bg-gold/10">
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="w-full border-gold/30 text-gold hover:bg-gold/10 bg-transparent"
+                      >
                         <Link href={`/${relatedProduct.category}/${relatedProduct.slug}`}>Ver detalles</Link>
                       </Button>
                     </div>
