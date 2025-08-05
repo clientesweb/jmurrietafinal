@@ -43,8 +43,8 @@ export default function ProductPage() {
     calibers: [
       {
         name: "Calibre 5.5mm",
-        price: 645000, // Precio final
-        inflatedPrice: 709500, // Precio inflado (10% más)
+        price: 709500, // Precio final
+        inflatedPrice: 780450, // Precio inflado (10% más)
         specs: {
           velocity: "950-1050 fps (200 bar)",
           autonomy: "35-40 disparos óptimos (200 bar)",
@@ -52,8 +52,8 @@ export default function ProductPage() {
       },
       {
         name: "Calibre 6.35mm",
-        price: 699000, // Precio final
-        inflatedPrice: 768900, // Precio inflado (10% más)
+        price: 768900, // Precio final
+        inflatedPrice: 845790, // Precio inflado (10% más)
         specs: {
           velocity: "950-1050 fps (200 bar)",
           autonomy: "25-30 disparos óptimos (200 bar)",
@@ -61,8 +61,8 @@ export default function ProductPage() {
       },
       {
         name: "Calibre 7.62mm",
-        price: 799000, // Precio final
-        inflatedPrice: 878900, // Precio inflado (10% más)
+        price: 878900, // Precio final
+        inflatedPrice: 966790, // Precio inflado (10% más)
         specs: {
           velocity: "950-1050 fps (200 bar)",
           autonomy: "10-15 disparos óptimos (200 bar)",
@@ -83,7 +83,7 @@ export default function ProductPage() {
       id: "j1",
       name: "J. MURRIETA MOD. J1",
       slug: "rifle-murrieta-j1",
-      price: 575000,
+      price: 632500,
       image: "/images/rifle-j1-real-2.jpeg",
       category: "rifles",
     },
