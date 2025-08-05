@@ -137,16 +137,16 @@ export default function Home() {
 
   // Precios finales de los rifles J1 (los precios reales)
   const j1FinalPrices = {
-    "5.5": 575000,
-    "6.35": 625000,
-    "7.62": 725000,
+    "5.5": 632500,
+    "6.35": 687500,
+    "7.62": 797500,
   }
 
   // Precios finales de los rifles Bullpup (los precios reales)
   const bullpupFinalPrices = {
-    "5.5": 645000,
-    "6.35": 699000,
-    "7.62": 799000,
+    "5.5": 709500,
+    "6.35": 768900,
+    "7.62": 878900,
   }
 
   // Calcular precios inflados (aproximadamente 10% más)
@@ -300,7 +300,7 @@ export default function Home() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none"
+                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none bg-transparent"
               >
                 <Link href="/rifles">VER TODOS LOS RIFLES</Link>
               </Button>
@@ -421,7 +421,7 @@ export default function Home() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none"
+                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none bg-transparent"
               >
                 <Link href="/accesorios">VER TODOS LOS ACCESORIOS</Link>
               </Button>
@@ -469,7 +469,7 @@ export default function Home() {
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full border-gold/30 text-gold hover:bg-gold/10 hover:text-gold"
+                      className="w-full border-gold/30 text-gold hover:bg-gold/10 hover:text-gold bg-transparent"
                     >
                       <Link href={`/blog/${blog.slug}`} className="flex items-center justify-center gap-2">
                         LEER MÁS <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -485,7 +485,7 @@ export default function Home() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none"
+                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none bg-transparent"
               >
                 <Link href="/blog">VER TODOS LOS ARTÍCULOS</Link>
               </Button>
@@ -520,7 +520,7 @@ export default function Home() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none"
+                className="font-cinzel text-gold border-gold hover:bg-gold/10 hover:text-gold py-6 px-8 rounded-none bg-transparent"
               >
                 <Link href="/faq">VER TODAS LAS PREGUNTAS</Link>
               </Button>
