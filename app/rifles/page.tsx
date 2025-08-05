@@ -35,16 +35,16 @@ export default function RiflesPage() {
 
   // Precios finales de los rifles J1 (los precios reales)
   const j1FinalPrices = {
-    "5.5": 575000,
-    "6.35": 625000,
-    "7.62": 725000,
+    "5.5": 632500,
+    "6.35": 687500,
+    "7.62": 797500,
   }
 
   // Precios finales de los rifles Bullpup (los precios reales)
   const bullpupFinalPrices = {
-    "5.5": 645000,
-    "6.35": 699000,
-    "7.62": 799000,
+    "5.5": 709500,
+    "6.35": 768900,
+    "7.62": 878900,
   }
 
   // Calcular precios inflados (aproximadamente 10% más)
@@ -199,7 +199,11 @@ export default function RiflesPage() {
                           VER DETALLES <ArrowRight className="h-4 w-4" />
                         </Link>
                       </Button>
-                      <Button asChild variant="outline" className="flex-1 border-gold/30 text-gold hover:bg-gold/10">
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="flex-1 border-gold/30 text-gold hover:bg-gold/10 bg-transparent"
+                      >
                         <Link href={`/rifles/${rifle.slug}`}>COMPRAR</Link>
                       </Button>
                     </div>
@@ -241,7 +245,11 @@ export default function RiflesPage() {
                           VER DETALLES <ArrowRight className="h-4 w-4" />
                         </Link>
                       </Button>
-                      <Button asChild variant="outline" className="flex-1 border-gold/30 text-gold hover:bg-gold/10">
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="flex-1 border-gold/30 text-gold hover:bg-gold/10 bg-transparent"
+                      >
                         <Link href={`/rifles/${rifle.slug}`}>COMPRAR</Link>
                       </Button>
                     </div>
